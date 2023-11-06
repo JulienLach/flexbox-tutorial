@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    background-color: #f4f4f4;
+    /* justify content s'applique TOUJOURS sur l'axe principal */
+    /*justify-content: end;*/
+    /* align itemps s'applique TOUJOURS sur l'axe secondaire a l'axe principal */
+    /*align-items: center;*/
+    /* flex-wrap: wrap; */
+}
+
+
+.item {
+    flex: 1;
+    height: 100px;
+    background: blue;
+    margin: 10px;
+    color: #FFF;
+    /*Les 3 propriété du dessous sont la manière la plus simple de centrer une div*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .item:nth-of-type(1) {
+    flex-grow: 1;
+} */
+
+
+
+/* .item:nth-of-type(1) {
+    order: 2;
+} */
+
+/* .item:nth-of-type(2) {
+    order: 1;
+} */
+
+/*flex-wrap: wrap; si j'alligne des éléments mais que les dernière ne rentrent pas à droite, il vont directement en dessous*/
